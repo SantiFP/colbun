@@ -8,8 +8,8 @@
   justify-content: center;
 }
 .filtro-botones {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   background-color: white;
   display: inline-flex;
   border: white solid 1px;
@@ -83,16 +83,13 @@ tbody tr:last-child td:last-child {
 }
 /* Colores según la imagen */
 .celda-verde {
-  background-color: rgb(77, 212, 77);
+  background-color: rgb(141, 170, 36);
 }
 .celda-amarilla {
-  background-color: #fff2cc;
-}
-.celda-azul {
-  background-color: #cfe2f3;
+  background-color: #e4ab30;
 }
 .celda-celeste {
-  background-color: #d0e0e3;
+  background-color: #49c0d5;
 }
 
 * {
