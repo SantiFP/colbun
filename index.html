@@ -1,237 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Centro de Proyectos</title>
-    <script src="https://kit.fontawesome.com/c89b79ec4d.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/c89b79ec4d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <nav class="barraNav">
-            <section class="menuHamburguesaSection">
+      <nav class="barraNav">
+        <section class="menuHamburguesaSection">
+          <input type="radio" id="menuHamburgesaIcono" name="hamburguesa" />
+          <label for="menuHamburgesaIcono" class="labelHamburguesa"
+            ><img
+              class="menuHamburgesaIcono"
+              src="img/menu_hamburgesa.png"
+              alt=""
+          /></label>
 
-               
-                <input type="radio" id="menuHamburgesaIcono" name="hamburguesa">
-                <label for="menuHamburgesaIcono" class="labelHamburguesa"><img class="menuHamburgesaIcono" src="img/menu_hamburgesa.png" alt=""></label>
-                
-                <div class="menuItems">
-                    <img src="img/Colbun_logo.png" alt="" class="logoPrincipal">
-                    <input type="radio" id="menuHamburgesaIconoCerrar" name="hamburguesa">
-                    <label for="menuHamburgesaIconoCerrar" class="labelHamburguesaCruz"><i class="fa-solid fa-xmark cruzNav"></i></label>
-                    
-                    <ul>
-                        <li class="acordionSection acordionSectionNavBar">
-                            <a class="acordionItem acordionItemNavBar">
-                                <div>
-                                    <img src="img/reportes_icono.png" alt="">
-                                    <h4>REPORTES</h4>
-                                </div>
-                                <img class="flecha" src="img/flechaNavBar.png" alt="">
-                            </a>
-                            <!-- En el siguiente div va el contenido que se vera al desplegar los distintos acordions -->
-                            <!-- <div class="acordionContenido acordionContenidoNavBar">
+          <div class="menuItems">
+            <img src="img/Colbun_logo.png" alt="" class="logoPrincipal" />
+            <input
+              type="radio"
+              id="menuHamburgesaIconoCerrar"
+              name="hamburguesa"
+            />
+            <label for="menuHamburgesaIconoCerrar" class="labelHamburguesaCruz"
+              ><i class="fa-solid fa-xmark cruzNav"></i
+            ></label>
+
+            <ul>
+              <li class="acordionSection acordionSectionNavBar">
+                <a class="acordionItem acordionItemNavBar">
+                  <div>
+                    <img src="img/reportes_icono.png" alt="" />
+                    <h4>REPORTES</h4>
+                  </div>
+                  <img class="flecha" src="img/flechaNavBar.png" alt="" />
+                </a>
+                <!-- En el siguiente div va el contenido que se vera al desplegar los distintos acordions -->
+                <!-- <div class="acordionContenido acordionContenidoNavBar">
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam fugit, excepturi recusandae sint quia ex velit aperiam, mollitia fugiat rem eius. Praesentium fugit dolor quis non dolorem labore fuga sapiente!</p>
                             </div> -->
-                        </li>
+              </li>
 
-                        <li class="acordionSection acordionSectionNavBar">
-                            <a class="acordionItem acordionItemNavBar">
-                                <div>
-                                    <img src="img/herramientas_icono.png" alt="">
-                                    <h4>HERRAMIENTAS</h4>
-                                </div>
-                                <img class="flecha" src="img/flechaNavBar.png" alt="">
-                            </a>
-                            <!-- En el siguiente div va el contenido que se vera al desplegar los distintos acordions -->
-                            <!-- <div class="acordionContenido acordionContenidoNavBar">
+              <li class="acordionSection acordionSectionNavBar">
+                <a class="acordionItem acordionItemNavBar">
+                  <div>
+                    <img src="img/herramientas_icono.png" alt="" />
+                    <h4>HERRAMIENTAS</h4>
+                  </div>
+                  <img class="flecha" src="img/flechaNavBar.png" alt="" />
+                </a>
+                <!-- En el siguiente div va el contenido que se vera al desplegar los distintos acordions -->
+                <!-- <div class="acordionContenido acordionContenidoNavBar">
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam fugit, excepturi recusandae sint quia ex velit aperiam, mollitia fugiat rem eius. Praesentium fugit dolor quis non dolorem labore fuga sapiente!</p>
                             </div> -->
-                        </li>
+              </li>
 
-                        <li class="acordionSection acordionSectionNavBar">
-                            <a class="acordionItem acordionItemNavBar">
-                                <div>
-                                    <img src="img/academia_icono.png" alt="">
-                                    <h4>ACADEMIA</h4>
-                                </div>
-                                <img class="flecha" src="img/flechaNavBar.png" alt="">
-                            </a>
-                            <!-- En el siguiente div va el contenido que se vera al desplegar los distintos acordions -->
-                            <!-- <div class="acordionContenido acordionContenidoNavBar">
+              <li class="acordionSection acordionSectionNavBar">
+                <a class="acordionItem acordionItemNavBar">
+                  <div>
+                    <img src="img/academia_icono.png" alt="" />
+                    <h4>ACADEMIA</h4>
+                  </div>
+                  <img class="flecha" src="img/flechaNavBar.png" alt="" />
+                </a>
+                <!-- En el siguiente div va el contenido que se vera al desplegar los distintos acordions -->
+                <!-- <div class="acordionContenido acordionContenidoNavBar">
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam fugit, excepturi recusandae sint quia ex velit aperiam, mollitia fugiat rem eius. Praesentium fugit dolor quis non dolorem labore fuga sapiente!</p>
                             </div> -->
-                        </li>
+              </li>
 
-                        <li class="acordionSection acordionSectionNavBar">
-                            <a class="acordionItem acordionItemNavBar">
-                                <div>
-                                    <img src="img/archivo_icono.png" alt="">
-                                    <h4>ARCHIVO DOCU. PROYECTOS</h4>
-                                </div>
-                                <img class="flecha" src="img/flechaNavBar.png" alt="">
-                            </a>
-                            <!-- En el siguiente div va el contenido que se vera al desplegar los distintos acordions -->
-                            <!-- <div class="acordionContenido acordionContenidoNavBar">
+              <li class="acordionSection acordionSectionNavBar">
+                <a class="acordionItem acordionItemNavBar">
+                  <div>
+                    <img src="img/archivo_icono.png" alt="" />
+                    <h4>ARCHIVO DOCU. PROYECTOS</h4>
+                  </div>
+                  <img class="flecha" src="img/flechaNavBar.png" alt="" />
+                </a>
+                <!-- En el siguiente div va el contenido que se vera al desplegar los distintos acordions -->
+                <!-- <div class="acordionContenido acordionContenidoNavBar">
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam fugit, excepturi recusandae sint quia ex velit aperiam, mollitia fugiat rem eius. Praesentium fugit dolor quis non dolorem labore fuga sapiente!</p>
                             </div> -->
-                        </li>
+              </li>
 
-                        <li class="acordionSection acordionSectionNavBar">
-                            <a class="acordionItem acordionItemNavBar">
-                                <div>
-                                    <img src="img/manuales_icono.png" alt="">
-                                    <h4>MANUALES Y PROCEDIMIENTOS</h4>
-                                </div>
-                                <img class="flecha" src="img/flechaNavBar.png" alt="">
-                            </a>
-                            <!-- En el siguiente div va el contenido que se vera al desplegar los distintos acordions -->
-                            <!-- <div class="acordionContenido acordionContenidoNavBar">
+              <li class="acordionSection acordionSectionNavBar">
+                <a class="acordionItem acordionItemNavBar">
+                  <div>
+                    <img src="img/manuales_icono.png" alt="" />
+                    <h4>MANUALES Y PROCEDIMIENTOS</h4>
+                  </div>
+                  <img class="flecha" src="img/flechaNavBar.png" alt="" />
+                </a>
+                <!-- En el siguiente div va el contenido que se vera al desplegar los distintos acordions -->
+                <!-- <div class="acordionContenido acordionContenidoNavBar">
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam fugit, excepturi recusandae sint quia ex velit aperiam, mollitia fugiat rem eius. Praesentium fugit dolor quis non dolorem labore fuga sapiente!</p>
                             </div> -->
-                        </li>
-                    </ul>
-                    
-                </div>
-            </section>
-
-            <section class="tituloPrincipal">
-                <h1>Centro de Proyectos</h1>
-            </section>
-
-            <section class="perfilSection">
-                <div>
-                    <img src="img/img_perfil.png" alt="">
-                </div>
-
-                <div class="perfilTexto">
-                    <p>BIENVENIDO</p>
-                    <a href="">NOMBRE DE USUARIO</a>
-                </div>
-            </section>
-        </nav>
-    </header>
-   
-    <main>
-
-        <section class="barraIzquierdaSection">
-            <img class="logo" src="img/logo.png" alt="">
-            <div class="barraIzquierda">
-                    <a href=""><img src="img/reportes_icono.png" alt=""></a>
-                    <a href=""><img src="img/herramientas_icono.png" alt=""></a>
-                    <a href=""><img src="img/academia_icono.png" alt=""></a>
-                    <a href=""><img src="img/archivo_icono.png" alt=""></a>
-                    <a href=""><img src="img/manuales_icono.png" alt=""></a>
-            </div>
+              </li>
+            </ul>
+          </div>
         </section>
 
+        <section class="tituloPrincipal">
+          <h1>Centro de Proyectos</h1>
+        </section>
 
-        <!------------------------------------------- TABLAAAAAAAAAAAAAA ----------------------------------------------->
-
-        <div class="tabla-contenedor">
-            <div class="flex-container">
-      
-              <div class="filtro-botones">
-                <button>Todos</button>
-                <button>P1</button>
-                <button>P2</button>
-                <button style="border: none;">P3</button>
-              </div>
-            </div>
-      
-            <table>
-              <thead>
-                <tr>
-                  <th class="columna-fija"></th>
-                  <th>Integración</th>
-                  <th>Stakeholders</th>
-                  <th>Alcance</th>
-                  <th>Cronograma</th>
-                  <th>Recursos</th>
-                  <th>Compras y Contratos</th>
-                  <th>Costos y Presupuestos</th>
-                  <th>Riesgos</th>
-                  <th>Calidad</th>
-                  <th>Comunicaciones</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                    <td class="columna-fija">PLANIFICACIÓN</td>
-                    <td class="celda-verde">
-                      <div class="bloque">
-                        <div class="sub-bloque1">Plan Gestión de Proyectos</div>
-                        <div class="sub-bloque2">Cell text</div>
-                      </div>
-                    </td>
-                    <td class="celda-verde">Plan Gestión de Proyectos</td>
-                    <td class="celda-azul">Plan Gestión de Proyectos</td>
-                    <td class="celda-verde">Plan Gestión de Proyectos</td>
-                    <td class="celda-verde">Plan Gestión de Proyectos</td>
-                    <td class="celda-verde">Plan Gestión de Proyectos</td>
-                    <td class="celda-verde">Plan Gestión de Proyectos</td>
-                    <td class="celda-verde">Plan Gestión de Proyectos</td>
-                    <td class="celda-verde">Plan Gestión de Proyectos</td>
-                    <td class="celda-verde">Plan Gestión de Proyectos</td>
-
-                </tr>
-                <tr>
-                  <td class="columna-fija">P2</td>
-                  <td class="celda-verde">Plan Gestión de Proyectos</td>
-                  <td class="celda-verde">Plan Gestión de Proyectos</td>
-                  <td class="celda-verde">Plan Gestión de Proyectos</td>
-                  <td class="celda-amarilla">Texto Celda</td>
-                  <td class="celda-verde">Plan Gestión de Proyectos</td>
-                  <td class="celda-amarilla">Texto Celda</td>
-                  <td class="celda-amarilla">Texto Celda</td>
-                  <td class="celda-amarilla">Texto Celda</td>
-                  <td class="celda-amarilla">Texto Celda</td>
-                  <td class="celda-amarilla">Texto Celda</td>
-                </tr>
-                <tr>
-                  <td class="columna-fija">CONTROL Y SEGUIMIENTO</td>
-                  <td class="celda-verde">Plan Gestión de Proyectos</td>
-                  <td class="celda-verde">Plan Gestión de Proyectos</td>
-                  <td class="celda-verde">Plan Gestión de Proyectos</td>
-                  <td class="celda-celeste">Texto Celda</td>
-                  <td class="celda-verde">Plan Gestión de Proyectos</td>
-                  <td class="celda-celeste">
-                    Especificaciones y Administración de Adquisiciones
-                  </td>
-                  <td class="celda-celeste">Uso de recursos y ahorro de costos</td>
-                  <td class="celda-celeste">Texto Celda</td>
-                  <td class="celda-celeste">Texto Celda</td>
-                  <td class="celda-celeste">Texto Celda</td>
-                </tr>
-                <tr>
-                  <td class="columna-fija">CIERRE Y TRASPASO</td>
-                  <td class="celda-verde">Plan Gestión de Proyectos</td>
-                  <td class="celda-verde">Plan Gestión de Proyectos</td>
-                  <td class="celda-verde">Plan Gestión de Proyectos</td>
-                  <td class="celda-celeste">Texto Celda</td>
-                  <td class="celda-verde">Plan Gestión de Proyectos</td>
-                  <td class="celda-celeste">Plan Gestión de Proyectos</td>
-                  <td class="celda-celeste">Texto Celda</td>
-                  <td class="celda-celeste">Texto Celda</td>
-                  <td class="celda-celeste">Texto Celda</td>
-                  <td class="celda-verde">
-                    Transparencia e información relevante del proyecto
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+        <section class="perfilSection">
+          <div>
+            <img src="img/img_perfil.png" alt="" />
           </div>
 
+          <div class="perfilTexto">
+            <p>BIENVENIDO</p>
+            <a href="">NOMBRE DE USUARIO</a>
+          </div>
+        </section>
+      </nav>
+    </header>
+
+    <main>
+      <section class="barraIzquierdaSection">
+        <img class="logo" src="img/logo.png" alt="" />
+        <div class="barraIzquierda">
+          <a href=""><img src="img/reportes_icono.png" alt="" /></a>
+          <a href=""><img src="img/herramientas_icono.png" alt="" /></a>
+          <a href=""><img src="img/academia_icono.png" alt="" /></a>
+          <a href=""><img src="img/archivo_icono.png" alt="" /></a>
+          <a href=""><img src="img/manuales_icono.png" alt="" /></a>
+        </div>
+      </section>
+
+      <!------------------------------------------- TABLAAAAAAAAAAAAAA ----------------------------------------------->
+
+      <div class="container">
+        <div class="flex-container">
+          <div class="filtro-botones">
+            <button>Todos</button>
+            <button>P1</button>
+            <button>P2</button>
+            <button style="border: none">P3</button>
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th class="columna1"></th>
+              <th>Integración</th>
+              <th>Stakeholders</th>
+              <th>Alcance</th>
+              <th>Cronograma</th>
+              <th>Recursos</th>
+              <th>Compras y Contratos</th>
+              <th>Costos y Presupuestos</th>
+              <th>Riesgos</th>
+              <th>Calidad</th>
+              <th>Comunicaciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="columna1">PLANIFICACIÓN</td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-azul" style="padding-left: 4px">
+                Plan Gestión de Proyectos
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+            </tr>
 
 
 
+            <tr>
+              <td class="columna1">P2</td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde" style="padding-left: 4px">
+                Plan Gestión de Proyectos
+              </td>
+              <td class="celda-verde" style="padding-left: 4px">
+                Cell text
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-amarilla" style="padding-left: 4px;">Cell text</td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+            </tr>
 
 
 
+            <tr>
+              <td class="columna1">CONTROL Y SEGUIMIENTO</td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde" style="padding-left:4px ;">Plan Gestión de Proyectos</td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-celeste" style="padding-left: 4px;">Cell text</td>
+              <td class="celda-verde" style="padding-left: 4px;">Cell text</td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Uso de recursos y planes de acción para desviaciones</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+            </tr>
 
-        
-        <!-- <section class="sectionMain">
+
+            <tr>
+              <td class="columna1">CIERRE Y TRASPASO</td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde">
+                <div class="bloque">
+                  <div class="sub-bloque1">Plan Gestión de Proyectos</div>
+                  <div class="sub-bloque2">Cell text</div>
+                </div>
+              </td>
+              <td class="celda-verde" style="padding: 4px;">
+                Transparencia e información relevante del proyecto
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- <section class="sectionMain">
             <section class="subTitulo">
                 <h2>REPORTES</h2>
             </section>
@@ -342,27 +508,24 @@
         <aside class="bannerVertical">
             <img src="img/aerogenerador.png" alt="">
         </aside> -->
-
     </main>
 
     <footer>
+      <section class="logoRedesFooter">
+        <img src="img/Colbun_logo_footer.png" alt="" />
+        <div>
+          <a href=""><img src="img/LinkedIn.png" alt="" /></a>
+          <a href=""><img src="img/Facebook.png" alt="" /></a>
+          <a href=""><img src="img/Twitter.png" alt="" /></a>
+        </div>
+      </section>
 
-        <section class="logoRedesFooter">
-            <img src="img/Colbun_logo_footer.png" alt="">
-            <div>
-                <a href=""><img src="img/LinkedIn.png" alt=""></a>
-                <a href=""><img src="img/Facebook.png" alt=""></a>
-                <a href=""><img src="img/Twitter.png" alt=""></a>
-            </div>
-        </section>
-        
-        <hr class="hrFooter">
+      <hr class="hrFooter" />
 
-        <section class="copyright">
-            <p>© 2023 Copyright</p>
-        </section>
-
+      <section class="copyright">
+        <p>© 2023 Copyright</p>
+      </section>
     </footer>
-</body>
-<script src="js/script.js"></script>
+  </body>
+  <script src="js/script.js"></script>
 </html>

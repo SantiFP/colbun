@@ -1,15 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
-.sub-bloque1 {
-  background-color: red;
-  flex: 1;
- 
+.container {
+  margin: 5rem auto;
 }
-.sub-bloque2 {
-  background-color: blue;
-  flex: 1;
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+.filtro-botones {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background-color: white;
+  display: inline-flex;
+  border: white solid 1px;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 13px 12px 29px -6px rgba(0, 0, 0, 0.33);
+  box-shadow: 13px 12px 29px -6px rgba(0, 0, 0, 0.33);
+}
 
+.filtro-botones button {
+  padding: 0.8rem 3rem;
+  color: #007bff;
+  font-weight: 700;
+  font-size: medium;
+  cursor: pointer;
+  background-color: inherit;
+  border-right: 1px solid rgb(240, 224, 224);
 }
+
 table {
   width: 98%;
   margin: 0 auto;
@@ -17,42 +36,50 @@ table {
   table-layout: fixed;
 }
 
-.bloque {
-    display: flex;
-    flex-direction: column; /* Coloca los sub-bloques en columna */
-    height: 100%; 
-}
-
-.tabla-contenedor {
-  margin: 5rem auto;
-}
-
-thead th:first-child {
-  border-top-left-radius: 10px; 
-}
-
-thead th:last-child {
-  border-top-right-radius: 10px; 
-}
-
-tbody tr:last-child td:first-child {
-  border-bottom-left-radius: 10px; 
-}
-
-tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 10px; 
-}
-
-th,
 td {
   width: auto;
-  padding: 18px 0;
+  height: 120px;
 }
 th {
   background-color: #007bff;
   color: white;
   font-weight: bold;
   padding: 8px 4px;
+}
+thead th:first-child {
+  border-top-left-radius: 10px;
+}
+
+thead th:last-child {
+  border-top-right-radius: 10px;
+}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+.columna1 {
+  background-color: #e3f0ff;
+  padding-left: 8px;
+  color: #007bff;
+  font-weight: 700;
+}
+
+.bloque {
+  height: 100%;
+}
+.sub-bloque1,
+.sub-bloque2 {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 4px;
+}
+.sub-bloque2 {
+  border-top: 1px solid rgb(247, 245, 245);
 }
 /* Colores según la imagen */
 .celda-verde {
@@ -66,38 +93,6 @@ th {
 }
 .celda-celeste {
   background-color: #d0e0e3;
-}
-.columna-fija {
-  background-color: #e3f0ff;
-  padding-left: 8px;
-  color: #007bff;
-  font-weight: 700;
-}
-
-
-.filtro-botones {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  background-color: white;
-  display: inline-flex;
-  border: white solid 1px;
-  border-radius: 8px;
-  overflow: hidden;
-  -webkit-box-shadow: 13px 12px 29px -6px rgba(0, 0, 0, 0.33);
-  box-shadow: 13px 12px 29px -6px rgba(0, 0, 0, 0.33);
-}
-.filtro-botones button {
-  padding: 0.8rem 3rem;
-  color: #007bff;
-  font-weight: 700;
-  font-size: medium;
-  cursor: pointer;
-  background-color: inherit;
-  border-right: 1px solid rgb(240, 224, 224);
-}
-.flex-container {
-  display: flex;
-  justify-content: center;
 }
 
 * {
