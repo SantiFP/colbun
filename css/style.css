@@ -1,97 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
-.container {
-  margin: 5rem auto;
-}
-.flex-container {
-  display: flex;
-  justify-content: center;
-}
-.filtro-botones {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  background-color: white;
-  display: inline-flex;
-  border: white solid 1px;
-  border-radius: 8px;
-  overflow: hidden;
-  -webkit-box-shadow: 13px 12px 29px -6px rgba(0, 0, 0, 0.33);
-  box-shadow: 13px 12px 29px -6px rgba(0, 0, 0, 0.33);
-}
-
-.filtro-botones button {
-  padding: 0.8rem 3rem;
-  color: #007bff;
-  font-weight: 700;
-  font-size: medium;
-  cursor: pointer;
-  background-color: inherit;
-  border-right: 1px solid rgb(240, 224, 224);
-}
-
-table {
-  width: 98%;
-  margin: 0 auto;
-  font-size: smaller;
-  table-layout: fixed;
-}
-
-td {
-  width: auto;
-  height: 120px;
-}
-th {
-  background-color: #007bff;
-  color: white;
-  font-weight: bold;
-  padding: 8px 4px;
-}
-thead th:first-child {
-  border-top-left-radius: 10px;
-}
-
-thead th:last-child {
-  border-top-right-radius: 10px;
-}
-
-tbody tr:last-child td:first-child {
-  border-bottom-left-radius: 10px;
-}
-
-tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 10px;
-}
-.columna1 {
-  background-color: #e3f0ff;
-  padding-left: 8px;
-  color: #007bff;
-  font-weight: 700;
-}
-
-.bloque {
-  height: 100%;
-}
-.sub-bloque1,
-.sub-bloque2 {
-  height: 50%;
-  display: flex;
-  align-items: center;
-  padding-left: 4px;
-}
-.sub-bloque2 {
-  border-top: 1px solid rgb(247, 245, 245);
-}
-/* Colores según la imagen */
-.celda-verde {
-  background-color: rgb(141, 170, 36);
-}
-.celda-amarilla {
-  background-color: #e4ab30;
-}
-.celda-celeste {
-  background-color: #49c0d5;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -411,7 +319,6 @@ nav {
 footer {
   background-color: #212529;
   padding: 5px 30px;
-  position: absolute;
   width: 100%;
 }
 
@@ -440,17 +347,178 @@ footer {
   opacity: 60%;
 }
 
+.celda-verde {
+  background-color: rgb(141, 170, 36);
+}
+.celda-amarilla {
+  background-color: #e4ab30;
+}
+.celda-celeste {
+  background-color: #49c0d5;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.filtro-botones {
+  margin: 1.5rem 0;
+  background-color: white;
+  display: inline-flex;
+  border: white solid 1px;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 13px 12px 29px -6px rgba(0, 0, 0, 0.33);
+  box-shadow: 13px 12px 29px -6px rgba(0, 0, 0, 0.33);
+}
+
+.filtro-botones button {
+  padding: 0.8rem 3rem;
+  color: #007bff;
+  font-weight: 700;
+  font-size: medium;
+  cursor: pointer;
+  background-color: inherit;
+  border-right: 1px solid rgb(240, 224, 224);
+}
+
+thead th:last-child {
+  border-top-right-radius: 10px;
+}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
 @media screen and (max-width: 912px) {
   footer {
     width: 100%;
-    bottom: 0;
-    position: absolute;
+  }
+
+  /***************** ESTILOS TABLA CELULAR **********************/
+
+  .containerSm {
+    margin: 5.5rem 0;
+  }
+
+  .filtro-botones {
+    width: 90%;
+  }
+
+  .filtro-botones button {
+    width: 25%;
+    padding: 0.5rem 0;
+  }
+
+  table {
+    width: 98%;
+    margin: 0 auto;
+    font-size: x-small;
+    table-layout: fixed;
+  }
+
+  th {
+    padding: 0.5rem 0.8rem;
+    word-wrap: break-word;
+    background-color: #dbe7f0;
+    color: #004c8c;
+  }
+
+  td {
+    height: 120px;
+    word-wrap: break-word;
+  }
+
+  th:first-child {
+    background-color: inherit;
+  }
+
+  td:first-child {
+    background-color: #0063b1;
+    color: white;
+    padding-left: 4px;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .bloque {
+    height: 100%;
+  }
+  .sub-bloque1,
+  .sub-bloque2 {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+  }
+  .sub-bloque2 {
+    border-top: 1px solid rgb(247, 245, 245);
   }
 }
 
 @media screen and (min-width: 913px) {
   main {
     display: flex;
+  }
+
+  .containerSm {
+    display: none;
+  }
+
+  /******************* ESTILOS TABLA ESCRITORIO *********************************/
+
+  .container {
+    margin: 5rem auto;
+    display: block;
+  }
+
+  table {
+    width: 98%;
+    margin: 0 auto;
+    font-size: smaller;
+    table-layout: fixed;
+  }
+
+  td {
+    width: auto;
+    height: 120px;
+  }
+  th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    padding: 8px 4px;
+  }
+  thead th:first-child {
+    background-color: inherit;
+  }
+
+  td:first-child {
+    background-color: #e3f0ff;
+    padding-left: 8px;
+    color: #007bff;
+    font-weight: 700;
+  }
+
+  .bloque {
+    height: 100%;
+  }
+  .sub-bloque1,
+  .sub-bloque2 {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+  }
+  .sub-bloque2 {
+    border-top: 1px solid rgb(247, 245, 245);
   }
 
   .sectionMain {
