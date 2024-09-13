@@ -411,8 +411,11 @@ tbody tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
 
+.openModal{
+  cursor: pointer;
+}
 
-
+/********************** MODAL *****************************************************/
 
 .modal-overlay {
   position: fixed;
@@ -421,7 +424,6 @@ tbody tr:last-child td:last-child {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10;
@@ -430,81 +432,53 @@ tbody tr:last-child td:last-child {
 .modal {
   background-color: white;
   border-radius: 8px;
-  width: 80%;
-  max-width: 800px;
+  max-width: 70%;
   padding: 20px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.exitContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modalClose {
+  background-color: inherit;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.modalContainer {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .modal h2 {
   color: #007bff;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-.modal table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
-
-.modal table, .modal th, .modal td {
-  border: 1px solid #e0e0e0;
-}
-
-.modal th, .modal td {
-  padding: 10px;
+.modalColumn{
   text-align: center;
 }
 
-.modal th {
-  background-color: #f0f8ff;
+.columnTitle{
+  background-color: rgb(227, 222, 222);
+  color: #007bff;
+  font-weight: 700;
+  padding: 1rem 0;
 }
 
-.modal td {
-  background-color: #fff;
+.cellText{
+  border-bottom: 1px  rgb(240, 224, 224) solid;
+  padding: 0.5rem 0;
 }
 
-.modal p {
-  text-align: center;
-  margin-top: 20px;
-  color: #777;
-}
-
-.modal-close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  background: none;
-  border: none;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ----------------------------------------------------------------------------- */
 
 @media screen and (max-width: 912px) {
   footer {
@@ -632,6 +606,18 @@ tbody tr:last-child td:last-child {
   }
   .sub-bloque2 {
     border-top: 1px solid rgb(247, 245, 245);
+  }
+
+  .modalData{
+    display: flex;
+  }
+
+  .modalColumn{
+    width: 25%;
+  }
+
+  .exitContainer{
+    padding-top: 1rem;
   }
 
   .sectionMain {
