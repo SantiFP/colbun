@@ -347,14 +347,47 @@ footer {
   opacity: 60%;
 }
 
+.celda-celeste {
+  background-color: #49c0d5;
+}
+
+.celda-celeste .bloque div:hover {
+  background-color: #3292a3;
+}
+
+.celda-celeste.openModal:hover {
+  background-color: #3292a3;
+}
+
 .celda-verde {
   background-color: rgb(141, 170, 36);
+}
+
+.celda-verde .bloque div:hover {
+  background-color: rgb(89, 109, 18);
+}
+
+.celda-verde.openModal:hover {
+  background-color: rgb(89, 109, 18);
 }
 .celda-amarilla {
   background-color: #e4ab30;
 }
-.celda-celeste {
-  background-color: #49c0d5;
+
+.celda-amarilla .bloque div:hover {
+  background-color: #a37a20;
+}
+
+.celda-amarilla.openModal:hover {
+  background-color: #a37a20;
+}
+
+.celda-gris{
+  background-color: rgb(196, 190, 190);
+}
+
+.celda-gris:hover{
+  background-color: rgb(133, 127, 127);
 }
 
 .flex-container {
