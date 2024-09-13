@@ -411,7 +411,7 @@ tbody tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
 
-.openModal{
+.openModal {
   cursor: pointer;
 }
 
@@ -432,7 +432,6 @@ tbody tr:last-child td:last-child {
 .modal {
   background-color: white;
   border-radius: 8px;
-  max-width: 70%;
   padding: 20px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -458,23 +457,22 @@ tbody tr:last-child td:last-child {
 
 .modal h2 {
   color: #007bff;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 
-.modalColumn{
+.modalColumn {
   text-align: center;
 }
 
-.columnTitle{
+.columnTitle {
   background-color: rgb(227, 222, 222);
   color: #007bff;
   font-weight: 700;
   padding: 1rem 0;
 }
 
-.cellText{
-  border-bottom: 1px  rgb(240, 224, 224) solid;
+.cellText {
+  border-bottom: 1px rgb(240, 224, 224) solid;
   padding: 0.5rem 0;
 }
 
@@ -483,6 +481,9 @@ tbody tr:last-child td:last-child {
 @media screen and (max-width: 912px) {
   footer {
     width: 100%;
+  }
+
+  .modal {
   }
 
   /***************** ESTILOS TABLA CELULAR **********************/
@@ -546,6 +547,10 @@ tbody tr:last-child td:last-child {
   .sub-bloque2 {
     border-top: 1px solid rgb(247, 245, 245);
   }
+
+  .modal {
+    max-width: 85%;
+  }
 }
 
 @media screen and (min-width: 913px) {
@@ -608,15 +613,15 @@ tbody tr:last-child td:last-child {
     border-top: 1px solid rgb(247, 245, 245);
   }
 
-  .modalData{
+  .modalData {
     display: flex;
   }
 
-  .modalColumn{
+  .modalColumn {
     width: 25%;
   }
 
-  .exitContainer{
+  .exitContainer {
     padding-top: 1rem;
   }
 
@@ -657,5 +662,9 @@ tbody tr:last-child td:last-child {
 
   .barraIzquierda a:hover {
     background-color: #e9f5fe;
+  }
+
+  .modal {
+    max-width: 70%;
   }
 }
