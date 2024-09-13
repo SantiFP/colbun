@@ -11,7 +11,6 @@
 
 const buttons = document.querySelectorAll(".filterButton");
 const cells = document.querySelectorAll(".openModal");
-const modalContent = document.querySelector(".modal");
 const modal = document.querySelector(".modal-overlay");
 const closeModalButton = document.querySelector('.modalClose');
 
